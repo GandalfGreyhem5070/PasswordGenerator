@@ -45,4 +45,12 @@ function getRandomSymbol(){
 }
 // Example of the getRandomLower function
 console.log(getRandomSymbol()); //random lowercase letter
-//
+//  Pbject to store all the character generator functions
+
+const randomFunctions = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol,
+}
+
