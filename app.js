@@ -144,5 +144,7 @@ function generatePassword(lower, upper, number, symbol, length){
     const length = parseInt(lengthEl.value);
   
     console.log(hasLower, hasUpper, hasNumber, hasSymbol, length);
+    // The generatePassword function takes the true/false values determined by the checkboxes as well as the number from the number input as arguments and returns a string (AKA The Password) which is set as the innerText value for the "result" (AKA Span) element
+  resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
   });
 
